@@ -1,37 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* @keyframes slide1 {
+    0% {
+        transform: translate(-25vw);
+    }
 
-html,body{
-    /* height: 100%;
-    width: 100%; */
-    font-family: 'Libre Baskerville', serif;
+    50% {
+        transform: translate(48vw);
+    }
+
+    100% {
+        transform: translate(126vw);
+    }
 }
-.back{
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    height: 570px;
-    width: 400px;
-    border: 2px solid black;
-    border-radius: 25px;
+
+@keyframes slide2 {
+    0% {
+        transform: translate(-76vw);
+    }
+
+    50% {
+        transform: translate(0vw);
+    }
+
+    100% {
+        transform: translate(75vw);
+    }
+} */
+/* @keyframes slide3 {
+    0% {
+        transform: translate(-126vw);
+    }
+
+    50% {
+        transform: translate(-53vw);
+    }
+
+    100% {
+        transform: translate(24vw);
+    }
+} */
+@keyframes slide1 {
+    0% {
+        transform: translate(-50vw);
+    }
+
+    50% {
+        transform: translate(23vw);
+    }
+
+    100% {
+        transform: translate(101vw);
+    }
 }
-.button{
-    width: 66px;
-    margin: 5px 10px;
-    padding: 20px 15px;
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 25px;
-}
-.row{
-    margin: 10px 0px;
-}
-.row input{
-    /* width: 291px; */
-    font-size: 21px;
+
+@keyframes slide2 {
+    0% {
+        transform: translate(-101vw);
+    }
+
+    50% {
+        transform: translate(-28vw);
+    }
+
+    100% {
+        transform: translate(50vw);
+    }
+} 
+* {
     margin: 0;
-    padding: 5px 40px;
-    border: 2px solid black;
-    border-radius: 10px;
+    padding: 0;
 }
+
+header {
+    background-color: brown;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    padding: 6px 21px;
+    border-radius: 40px;
+}
+
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 17px 0;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 40px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    padding: 32px 48px;
+
+
+}
+
+.searchbar input {
+    height: 17px;
+    width: 300px;
+    padding: 5px;
+}
+
+.btn {
+    margin: 0 -24px;
+}
+
+.btn img {
+    height: 10px;
+    width: 14px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.slider {
+    height: 450px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.img1 {
+    transform: translate(-50vw);
+    animation: slide1 5s forwards;
+    border-radius: 20px;
+    animation-iteration-count: infinite;
+
+}
+
+.img2 {
+    transform: translate(-101vw);
+    animation: slide2 5s 2.5s forwards;
+    border-radius: 20px;
+    animation-iteration-count: infinite;
+
+}
+/* .img3 {
+    
+    height: 410px;
+    transform: translate(50vw);
+    animation: slide3 5s 6s forwards;
+    border-radius: 20px;
+    animation-iteration-count: infinite;
+} */
+
+
+.heading {
+    border: 1px solid lightblue;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+
+}
+
+.heading h1 {
+    font-family: 'Bungee Spice', cursive;
+}
+
+.container {
+    display: flex;
+
+}
+
+.box1 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px;
+
+}
+
+.box1:hover {
+    animation-name: card-animation;
+    animation-duration: 200ms;
+}
+
+@keyframes card-animation {
+    100% {
+        width: 420px;
+        transform: rotate(1deg);
+        box-shadow: 2px 7px rgb(204, 204, 204);
+    }
+}
+
+.box1 img {
+    width: 100%;
+    height: 200px;
+    border-radius: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+ }
+ 
+ h2 {
+    text-align: center;
+ }
+ 
+ .form-group {
+    margin: 30px 90px;
+ }
+ 
+ label {
+    display: block;
+    margin-bottom: 5px;
+ }
+ 
+ input[type="mail"],
+ input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+ }
+ 
+ .btn2 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+ }
+ 
+ .btn2:hover {
+    background-color: #3E8E41;
+ }
+
+
+
+
+
+
